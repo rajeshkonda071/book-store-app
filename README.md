@@ -1,8 +1,3 @@
-Gemini said
-You're very welcome! As a CSE graduate, having a professional documentation file (usually named README.md) is just as important as the code itself. It shows recruiters that you can communicate technical concepts clearly.
-
-Here is a comprehensive documentation template you can copy and paste. I have structured it to highlight your technical decisions and the "MERN" architecture.
-
 📚 MERN BookStore Application
 A modern, full-stack e-commerce style bookstore application featuring user authentication, category-based filtering, and a responsive dark-mode UI.
 
