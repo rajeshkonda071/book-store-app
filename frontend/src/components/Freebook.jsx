@@ -1,33 +1,26 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import Cards from "./Cards";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Freebook() {
-  const [book, setBook] = useState([]);
-
-  useEffect(() => {
-    const getBook = async () => {
-      try {
-        const res = await axios.get("http://localhost:5050/book"); // Your backend port
-        const data = res.data.filter((data) => data.price === 0);
-        setBook(data);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-    getBook();
-  }, []);
+  const navigate = useNavigate();
 
   return (
-    <div className="max-w-screen-2xl container mx-auto md:px-20 px-4">
-      <div>
-        <h1 className="font-semibold text-xl pb-2">Free Offered Books</h1>
-        <p>Take a look at our collection of free books to help you get started on your learning journey.</p>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
-        {book.map((item) => (
-          <Cards item={item} key={item._id} />
-        ))}
+    <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 mt-10">
+      <div className="space-y-4">
+        <h1 className="font-semibold text-2xl text-pink-500">
+          Free Offered Books
+        </h1>
+        <p className="text-gray-600 dark:text-gray-300">
+          Take a look at our curated collection of free books to help you get 
+          started on your learning journey. From JavaScript basics to advanced 
+          MERN stack patterns, we've got you covered.
+        </p>
+        <button 
+          onClick={() => navigate("/free-library")}
+          className="bg-pink-500 text-white px-6 py-2 rounded-md hover:bg-pink-700 duration-300 transition-all cursor-pointer"
+        >
+          Get Started
+        </button>
       </div>
     </div>
   );

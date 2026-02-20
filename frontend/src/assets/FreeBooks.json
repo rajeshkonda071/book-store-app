@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Eloquent JavaScript",
+    "title": "A Modern Introduction to Programming with JS.",
+    "price": 0,
+    "category": "JavaScript",
+    "image": "https://eloquentjavascript.net/img/cover.jpg"
+  },
+  {
+    "name": "You Don't Know JS",
+    "title": "Deep dive into JavaScript mechanics and scopes.",
+    "price": 0,
+    "category": "JavaScript",
+    "image": "https://m.media-amazon.com/images/I/41O55p-fVnL._SX331_BO1,204,203,200_.jpg"
+  },
+  {
+    "name": "Python for Everybody",
+    "title": "Great foundation for DSA and data processing.",
+    "price": 0,
+    "category": "Python",
+    "image": "https://www.py4e.com/cover.png"
+  },
+  {
+    "name": "Pro Git",
+    "title": "The ultimate guide to mastering version control.",
+    "price": 0,
+    "category": "DevOps",
+    "image": "https://git-scm.com/images/progit2.png"
+  },
+  {
+    "name": "React Handbook",
+    "title": "Learn the fundamentals of React and Hooks.",
+    "price": 0,
+    "category": "React",
+    "image": "https://flaviocopes.com/images/books/react.png"
+  },
+  {
+    "name": "Node.js Guide",
+    "title": "Building scalable backend services with Node.",
+    "price": 0,
+    "category": "Backend",
+    "image": "https://flaviocopes.com/images/books/node.png"
+  }
+]
