@@ -2,7 +2,7 @@ import React, { useState } from "react"; // 1. Import useState
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Cards from "../components/Cards";
-import list from "../assets/freebooks.json";
+import list from "../assets/FreeBooks.json";
 
 function FreeLibrary() {
   // 2. State to store the user's search input
